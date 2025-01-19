@@ -1,0 +1,55 @@
+2025-01-19 12:13:10,247 - ERROR - Exception while fetching from btc_price: {'code': '42P01', 'details': None, 'hint': None, 'message': 'relation "public.btc_price" does not exist'}
+2025-01-19 12:13:10,769 - ERROR - Exception while fetching from btc_news: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-01-19 12:13:11,473 - ERROR - Exception while fetching from eth_price: {'code': '42P01', 'details': None, 'hint': None, 'message': 'relation "public.eth_price" does not exist'}
+2025-01-19 12:13:12,499 - ERROR - Exception while fetching from eth_news: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-01-19 12:13:12,499 - ERROR - Incomplete BTC data. Aborting email composition.
+2025-01-19 12:18:28,803 - ERROR - Exception while fetching from btc_prices: {'code': '42703', 'details': None, 'hint': 'Perhaps you meant to reference the column "btc_prices.prices".', 'message': 'column btc_prices.price does not exist'}
+2025-01-19 12:18:35,150 - ERROR - Exception while fetching from btc_prices: {'code': '42703', 'details': None, 'hint': 'Perhaps you meant to reference the column "btc_prices.prices".', 'message': 'column btc_prices.price does not exist'}
+2025-01-19 12:18:41,407 - ERROR - Exception while fetching from btc_prices: {'code': '42703', 'details': None, 'hint': 'Perhaps you meant to reference the column "btc_prices.prices".', 'message': 'column btc_prices.price does not exist'}
+2025-01-19 12:23:37,359 - ERROR - Exception while fetching from btc_prices: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 12:23:43,872 - ERROR - Exception while fetching from btc_prices: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 12:23:50,471 - ERROR - Exception while fetching from btc_prices: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 12:26:40,914 - ERROR - Error generating summary: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-19 12:26:40,914 - ERROR - Error generating summary: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-19 12:26:46,476 - INFO - Email sent successfully.
+2025-01-19 12:29:14,645 - ERROR - Error generating summary: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-19 12:29:14,646 - ERROR - Error generating summary: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-19 12:29:20,272 - INFO - Email sent successfully.
+2025-01-19 12:31:59,907 - INFO - Email sent successfully.
+2025-01-19 12:33:59,570 - INFO - Email sent successfully.

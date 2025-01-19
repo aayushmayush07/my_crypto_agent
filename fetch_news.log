@@ -1,0 +1,54 @@
+2025-01-14 01:54:02,399 INFO:Fetched article for Bitcoin: Beyond MicroStrategy: 7 More Publicly Traded Companies That Are Stockpiling Bitcoin
+2025-01-14 01:54:03,320 INFO:HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news?on_conflict=title "HTTP/2 400 Bad Request"
+2025-01-14 01:54:03,321 ERROR:Error upserting into btc_news: {'code': '42P10', 'details': None, 'hint': None, 'message': 'there is no unique or exclusion constraint matching the ON CONFLICT specification'}
+2025-01-14 01:54:04,805 INFO:Fetched article for Ethereum: SECURITY AFFAIRS MALWARE NEWSLETTER – ROUND 28
+2025-01-14 01:54:05,778 INFO:HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/ethereum_news?on_conflict=title "HTTP/2 404 Not Found"
+2025-01-14 01:54:05,778 ERROR:Error upserting into ethereum_news: {}
+2025-01-19 11:06:53,414 INFO:Fetched article for Bitcoin: Bitcoin Open Interest Hits 350K BTC: Rising Levels Suggest Growing Market Activity
+2025-01-19 11:06:55,011 INFO:HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news?on_conflict=title "HTTP/2 400 Bad Request"
+2025-01-19 11:06:55,012 ERROR:Error upserting into btc_news: {'code': '42P10', 'details': None, 'hint': None, 'message': 'there is no unique or exclusion constraint matching the ON CONFLICT specification'}
+2025-01-19 11:06:55,829 INFO:Fetched article for Ethereum: Uniswap (UNI) price prediction – Here’s the case for a 30% rally
+2025-01-19 11:06:57,058 INFO:HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/ethereum_news?on_conflict=title "HTTP/2 404 Not Found"
+2025-01-19 11:06:57,059 ERROR:Error upserting into ethereum_news: {}
+2025-01-19 11:29:19,420 - ERROR - Error fetching news for Bitcoin: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Bitcoin&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:19,420 - INFO - Fetched BTC News: Error fetching news for Bitcoin: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Bitcoin&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:21,252 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news "HTTP/2 201 Created"
+2025-01-19 11:29:21,254 - ERROR - Exception occurred while inserting into btc_news: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 11:29:22,837 - ERROR - Error fetching news for Ethereum: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Ethereum&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:22,837 - INFO - Fetched ETH News: Error fetching news for Ethereum: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Ethereum&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:23,247 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/eth_news "HTTP/2 201 Created"
+2025-01-19 11:29:23,247 - ERROR - Exception occurred while inserting into eth_news: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 11:29:28,008 - ERROR - Error fetching news for Bitcoin: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Bitcoin&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:28,008 - INFO - Fetched BTC News: Error fetching news for Bitcoin: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Bitcoin&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:29,338 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news "HTTP/2 201 Created"
+2025-01-19 11:29:29,341 - ERROR - Exception occurred while inserting into btc_news: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 11:29:30,106 - ERROR - Error fetching news for Ethereum: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Ethereum&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:30,106 - INFO - Fetched ETH News: Error fetching news for Ethereum: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Ethereum&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk%2Ccryptonews
+2025-01-19 11:29:30,576 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/eth_news "HTTP/2 201 Created"
+2025-01-19 11:29:30,577 - ERROR - Exception occurred while inserting into eth_news: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 11:31:26,880 - ERROR - HTTP error occurred for Bitcoin: {'status': 'error', 'code': 'parametersMissing', 'message': "You are trying to request a source that doesn't exist. Please check your 'sources' param and try again."}
+2025-01-19 11:31:26,881 - INFO - Fetched BTC News: Error fetching news for Bitcoin: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Bitcoin&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk
+2025-01-19 11:31:28,827 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news "HTTP/2 201 Created"
+2025-01-19 11:31:28,832 - ERROR - Exception occurred while inserting into btc_news: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 11:31:30,679 - ERROR - HTTP error occurred for Ethereum: {'status': 'error', 'code': 'parametersMissing', 'message': "You are trying to request a source that doesn't exist. Please check your 'sources' param and try again."}
+2025-01-19 11:31:30,679 - INFO - Fetched ETH News: Error fetching news for Ethereum: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?qInTitle=Ethereum&sortBy=publishedAt&language=en&apiKey=0c035131e5b94634a032ff67f5cd60da&pageSize=5&sources=cointelegraph%2Ccoindesk
+2025-01-19 11:31:31,703 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/eth_news "HTTP/2 201 Created"
+2025-01-19 11:31:31,704 - ERROR - Exception occurred while inserting into eth_news: 'APIResponse[TypeVar]' object has no attribute 'status_code'
+2025-01-19 11:32:49,924 - INFO - Fetched BTC News: Bitcoin Dominance at 55%, set to stay strong in 2025 – JP Morgan: Analysts highlight eight key factors that could sustain Bitcoin dominance into 2025, reinforcing the leading coin's strength.
+2025-01-19 11:32:51,307 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news "HTTP/2 201 Created"
+2025-01-19 11:32:51,310 - ERROR - Exception occurred while inserting into btc_news: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-01-19 11:32:52,491 - INFO - Fetched ETH News: Sony Just Launched an Ethereum Network—Will It Get PlayStation Games?: PlayStation maker Sony launched its Ethereum network Soneium this week, and games are coming—but will we see Kratos and other PS5 icons?
+2025-01-19 11:32:52,900 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/eth_news "HTTP/2 201 Created"
+2025-01-19 11:32:52,900 - ERROR - Exception occurred while inserting into eth_news: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-01-19 11:33:22,842 - INFO - Fetched BTC News: Bitcoin Dominance at 55%, set to stay strong in 2025 – JP Morgan: Analysts highlight eight key factors that could sustain Bitcoin dominance into 2025, reinforcing the leading coin's strength.
+2025-01-19 11:33:24,029 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news "HTTP/2 201 Created"
+2025-01-19 11:33:24,035 - ERROR - Exception occurred while inserting into btc_news: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-01-19 11:33:24,940 - INFO - Fetched ETH News: Sony Just Launched an Ethereum Network—Will It Get PlayStation Games?: PlayStation maker Sony launched its Ethereum network Soneium this week, and games are coming—but will we see Kratos and other PS5 icons?
+2025-01-19 11:33:25,462 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/eth_news "HTTP/2 201 Created"
+2025-01-19 11:33:25,463 - ERROR - Exception occurred while inserting into eth_news: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-01-19 12:33:08,987 - INFO - Fetched BTC News: MicroStrategy Inc. Announces Updates on ATM Offerings and Bitcoin Holdings: On January 13, 2025, MicroStrategy Incorporated filed a Form 8-K report with the Securities and Exchange Commission, detailing recent updates on its At-The-Market (ATM) offerings and Bitcoin holdings. According to the report, between January 6, 2025, and Janu…
+2025-01-19 12:33:10,523 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/btc_news "HTTP/2 201 Created"
+2025-01-19 12:33:10,529 - ERROR - Exception occurred while inserting into btc_news: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-01-19 12:33:12,571 - INFO - Fetched ETH News: Is Bitcoin (BTC) in Secret Downtrend? Dogecoin (DOGE) Breaks Key Resistance Level, Ethereum (ETH) in Pain With No Signs of Breaking Through: Is Bitcoin (BTC) in Secret Downtrend? Dogecoin (DOGE) Breaks Key Resistance Level, Ethereum (ETH) in Pain With No Signs of Breaking Through
+2025-01-19 12:33:13,082 - INFO - HTTP Request: POST https://cdksqgryummocxvyywdj.supabase.co/rest/v1/eth_news "HTTP/2 201 Created"
+2025-01-19 12:33:13,084 - ERROR - Exception occurred while inserting into eth_news: 'APIResponse[TypeVar]' object has no attribute 'error'
