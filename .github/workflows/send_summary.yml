@@ -1,0 +1,56 @@
+name: Crypto Agent Scheduler
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"  # Runs every 3 hours at minute 0
+  workflow_dispatch:        # Allows manual triggering
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'  # Specify your Python version
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run btc_eth_price.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          python btc_eth_price.py
+
+      - name: Wait for 1 Minute
+        run: sleep 60
+
+      - name: Run fetch_news.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: |
+          python fetch_news.py
+
+      - name: Wait for 1 Minute
+        run: sleep 60
+
+      - name: Run send_summary.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_RECIPIENT_EMAIL: ${{ secrets.GMAIL_RECIPIENT_EMAIL }}
+        run: |
+          python send_summary.py
