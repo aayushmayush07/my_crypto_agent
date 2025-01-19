@@ -31,7 +31,7 @@ jobs:
           python btc_eth_price.py
 
       - name: Wait for 1 Minute
-        run: sleep 60
+        run: sleep 10
 
       - name: Run fetch_news.py
         env:
@@ -42,7 +42,7 @@ jobs:
           python fetch_news.py
 
       - name: Wait for 1 Minute
-        run: sleep 60
+        run: sleep 10
 
       - name: Run send_summary.py
         env:
